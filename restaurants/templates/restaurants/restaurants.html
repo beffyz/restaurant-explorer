@@ -36,7 +36,7 @@
         {% verbatim %}
         <div :class="currentView" class="restaurant-cards-wrapper slide-in">
             <div class="restaurant-card" v-for="r in filteredRestaurants" :key="r.id">
-                <img class="restaurant-card__img" src="../../static/card-img.jpg" alt="restaurant-logo"></img>
+                <img class="restaurant-card__img" :src="r.image" alt="restaurant-logo"></img>
 
                 <div class="restaurant-card__details">
                     <div class="restaurant-card__details-primary">

@@ -14,7 +14,7 @@
       </button>
       {% verbatim %}
       <div v-if='restaurant' class="restaurant-card" :key="restaurant.id">
-                <img class="restaurant-card__img" src="../../static/card-img.jpg" alt="restaurant-logo"></img>
+                <img class="restaurant-card__img" :src="restaurant.image" alt="restaurant-logo"></img>
 
                 <div class="restaurant-card__details">
                     <div class="restaurant-card__details-primary">

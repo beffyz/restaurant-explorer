@@ -6,7 +6,7 @@
     "cuisine": "Fusion",
     "price": "20-25",
     "rating": 4.6,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       1,
       2,
@@ -20,7 +20,7 @@
     "cuisine": "Italian",
     "price": "30-50",
     "rating": 3.2,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       4,
       5,
@@ -35,7 +35,7 @@
     "cuisine": "Japanese",
     "price": "50-100",
     "rating": 4.9,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       8,
       9,
@@ -49,7 +49,7 @@
     "cuisine": "American",
     "price": "20-25",
     "rating": 2.8,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       11,
       12,
@@ -64,7 +64,7 @@
     "cuisine": "Vegetarian",
     "price": "10-15",
     "rating": 4.1,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       15,
       16,
@@ -78,7 +78,7 @@
     "cuisine": "Indian",
     "price": "5-10",
     "rating": 3.7,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       18,
       19,
@@ -92,7 +92,7 @@
     "cuisine": "Mexican",
     "price": "5-10",
     "rating": 4.4,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       21,
       22,
@@ -107,7 +107,7 @@
     "cuisine": "Scandinavian",
     "price": "30-50",
     "rating": 4.0,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       25,
       26,
@@ -121,7 +121,7 @@
     "cuisine": "European",
     "price": "20-25",
     "rating": 2.4,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       28,
       29,
@@ -136,7 +136,7 @@
     "cuisine": "Seafood",
     "price": "50-100",
     "rating": 4.7,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       32,
       33,
@@ -150,7 +150,7 @@
     "cuisine": "Cafe",
     "price": "5-10",
     "rating": 3.5,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       35,
       36,
@@ -164,7 +164,7 @@
     "cuisine": "Thai",
     "price": "10-15",
     "rating": 4.2,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       38,
       39,
@@ -178,7 +178,7 @@
     "cuisine": "Mediterranean",
     "price": "20-25",
     "rating": 4.0,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       41,
       42,
@@ -193,7 +193,7 @@
     "cuisine": "Chinese",
     "price": "10-15",
     "rating": 2.9,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       45,
       46,
@@ -207,7 +207,7 @@
     "cuisine": "American",
     "price": "50-100",
     "rating": 4.8,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       48,
       49,
@@ -221,7 +221,7 @@
     "cuisine": "Spanish",
     "price": "30-50",
     "rating": 3.9,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       51,
       52,
@@ -235,7 +235,7 @@
     "cuisine": "Middle Eastern",
     "price": "10-15",
     "rating": 3.0,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       54,
       55,
@@ -250,7 +250,7 @@
     "cuisine": "Chinese",
     "price": "5-10",
     "rating": 4.3,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       58,
       59,
@@ -264,7 +264,7 @@
     "cuisine": "Grill",
     "price": "20-25",
     "rating": 3.8,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       61,
       62,
@@ -278,7 +278,7 @@
     "cuisine": "Polish",
     "price": "10-15",
     "rating": 4.5,
-    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg",
+    "image": "../../static/card-img.jpg",
     "reviews": [
       64,
       65,
