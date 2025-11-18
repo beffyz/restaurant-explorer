@@ -1,7 +1,8 @@
 import json
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from django.shortcuts import render
-from .utils import get_restaurants, get_reviews
+from django.views.decorators.csrf import csrf_exempt 
+from .utils import get_restaurants, get_reviews, add_review_to_store
 
 def restaurants(request):
     data = get_restaurants()
@@ -12,7 +13,42 @@ def restaurants(request):
 
     return render(request, "restaurants/restaurants.html", context)
 
+@csrf_exempt
 def restaurant(request, id):
+    restaurant_id = int(id)
+
+    if request.method == 'POST':
+        print(f"\n--- POST REQUEST RECEIVED for ID: {restaurant_id} ---") # ADDED PRINT
+
+        try:
+            if not request.body:
+                return JsonResponse({'success': False, 'error': 'Request body is empty.'}, status=400)
+            
+            data = json.loads(request.body) 
+
+            username = data.get('username')
+            comment = data.get('comment')
+            rating = int(data.get('rating'))
+            
+            if not (username and comment and rating):
+                return JsonResponse({'success': False, 'error': 'Missing required fields.'}, status=400)
+
+            new_review_data, new_average_rating = add_review_to_store(
+                restaurant_id, username, comment, rating
+            )
+
+            return JsonResponse({
+                'success': True,
+                'new_review': new_review_data,
+                'new_average_rating': new_average_rating
+            })
+        
+        except Exception as e:
+            return JsonResponse({
+                'success': False, 
+                'error': f'Server processing error: {type(e).__name__}: {str(e)}'
+            }, status=500)
+    
     restaurants_data = get_restaurants()
     reviews_data = get_reviews()
 
@@ -29,4 +65,34 @@ def restaurant(request, id):
     }
 
     return render(request, "restaurant/restaurant.html", context)
+
+@csrf_exempt
+def add_review_api(request, restaurant_id):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            username = data.get('username')
+            comment = data.get('comment')
+            rating = int(data.get('rating'))
+            
+            restaurant_id = int(restaurant_id)
+
+            if not (username and comment and rating):
+                return JsonResponse({'success': False, 'error': 'Missing required fields.'}, status=400)
+
+            # This function adds the review and recalculates the average rating.
+            new_review_data, new_average_rating = add_review_to_store(
+                restaurant_id, username, comment, rating
+            )
+
+            return JsonResponse({
+                'success': True,
+                'new_review': new_review_data,
+                'new_average_rating': new_average_rating
+            })
+        
+        except Exception as e:
+            return JsonResponse({'success': False, 'error': f'Invalid data format: {e}'}, status=400)
+
+    return JsonResponse({'success': False, 'error': 'Method not allowed'}, status=405)
     

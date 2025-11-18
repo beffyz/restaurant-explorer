@@ -77,22 +77,35 @@
             rating: 0
           });
 
-          const addReview = () => {
-             if (newReview.value.username && newReview.value.comment && newReview.value.rating) {
+      const addReview = async () => {
+          if (newReview.value.username && newReview.value.comment && newReview.value.rating) {
+              const currentUrl = window.location.href; 
               
-                reviews.value.unshift({ ...newReview.value });
-  
-                newReview.value.id = reviews.length + 1,
-                newReview.value.username = '';
-                newReview.value.comment = '';
-                newReview.value.rating = 0;
+              try {
+                  const response = await fetch(currentUrl, {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(newReview.value)
+                  });
 
-                isAddingActive.value = false;
-                return;
-             }
+                  const data = await response.json();
 
-            isAddingActive.value = true;
+                  if (data.success) {
+                      reviews.value.unshift(data.new_review);
+                      restaurant.value.rating = data.new_average_rating;
+
+                      newReview.value.username = '';
+                      newReview.value.comment = '';
+                      newReview.value.rating = 0;
+                      isAddingActive.value = false;
+                  }
+                } catch {}
+              return;
           }
+          isAddingActive.value = true;
+      }
 
           onMounted(() => {
             restaurant.value = restaurantData;
