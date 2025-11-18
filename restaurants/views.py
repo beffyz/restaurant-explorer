@@ -18,8 +18,6 @@ def restaurant(request, id):
     restaurant_id = int(id)
 
     if request.method == 'POST':
-        print(f"\n--- POST REQUEST RECEIVED for ID: {restaurant_id} ---") # ADDED PRINT
-
         try:
             if not request.body:
                 return JsonResponse({'success': False, 'error': 'Request body is empty.'}, status=400)

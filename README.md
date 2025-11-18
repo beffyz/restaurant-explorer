@@ -3,7 +3,7 @@
 1. Install python:
 https://www.python.org/downloads/release/pymanager-250/
 
-2. Create and Activate a Virtual Environment:
+2. Create a Virtual Environment:
 python3 -m venv venv
 
 3. Activate the environment:
