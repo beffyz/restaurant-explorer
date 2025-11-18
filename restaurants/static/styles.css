@@ -31,6 +31,20 @@ a:hover {
   transition: 0.1s;
 }
 
+input {
+  border: none;
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 12px;
+  background-color: rgba(196, 136, 51, 0.185);
+  backdrop-filter: blur(5px);
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -121,6 +135,15 @@ select {
   border-radius: 12px;
 }
 
+.restaurant-single {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.restaurant-single .restaurant-card {
+  max-width: 1000px;
+}
+
 .restaurant-cards-wrapper.column .restaurant-card {
   max-width: 100%;
 }
@@ -168,8 +191,48 @@ select {
   height: 100%;
 }
 
+.reviews-wrapper {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 157, 0, 0.485);
+  border-radius: 12px;
+  padding: 10px 6px;
+}
+
+.review-details  {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.review-img {
+  margin-left: 8px;
+}
+
+.add-review-btn {
+  align-self: flex-start;
+  margin-top: 24px;
+}
+
+.review-username {
+  font-weight: bold;
+}
+
 .back-link {
-  margin-top: 30px;
+  align-self: start;
+  margin-bottom: 30px;
 }
 
 .slide-in {
@@ -185,6 +248,10 @@ select {
 }
 
 @media (max-width: 640px) {
+  .toggle-view__btn {
+    display: none;
+  }
+
   .restaurant-card__img {
     border-radius: 12px;
     max-width: 100% !important;

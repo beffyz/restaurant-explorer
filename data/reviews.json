@@ -1,0 +1,471 @@
+[
+  {
+    "id": 1,
+    "restaurantId": 1,
+    "rating": 5,
+    "username": "FoodExplorer",
+    "comment": "The fusion dishes here are truly spectacular. Bold flavors and beautiful presentation. A must-try!"
+  },
+  {
+    "id": 2,
+    "restaurantId": 1,
+    "rating": 4,
+    "username": "ModernDiner",
+    "comment": "Great atmosphere and the service was attentive. The cocktail menu complements the food perfectly."
+  },
+  {
+    "id": 3,
+    "restaurantId": 1,
+    "rating": 4,
+    "username": "TasteTester",
+    "comment": "Slightly pricier, but worth it for the unique dining experience. The main course was excellent."
+  },
+  {
+    "id": 4,
+    "restaurantId": 2,
+    "rating": 3,
+    "username": "ItalianFan",
+    "comment": "The pasta was good, but the service was slow. Expected more homestyle flavor."
+  },
+  {
+    "id": 5,
+    "restaurantId": 2,
+    "rating": 3,
+    "username": "CasualEater",
+    "comment": "A cozy place. Portions are generous. Nothing mind-blowing, but solid Italian food."
+  },
+  {
+    "id": 6,
+    "restaurantId": 2,
+    "rating": 3,
+    "username": "RushedGuest",
+    "comment": "Took too long for the food to arrive and it was lukewarm. Disappointed with the overall experience."
+  },
+  {
+    "id": 7,
+    "restaurantId": 2,
+    "rating": 4,
+    "username": "LocalFoodie",
+    "comment": "The lasagna is a true comfort dish. I recommend sticking to the classics."
+  },
+  {
+    "id": 8,
+    "restaurantId": 3,
+    "rating": 5,
+    "username": "SushiSnob",
+    "comment": "The freshest fish I've had in years! Impeccable preparation and presentation. Absolutely top tier."
+  },
+  {
+    "id": 9,
+    "restaurantId": 3,
+    "rating": 5,
+    "username": "GourmetGeek",
+    "comment": "Expensive, but you get what you pay for. The Omakase menu is an experience unto itself."
+  },
+  {
+    "id": 10,
+    "restaurantId": 3,
+    "rating": 5,
+    "username": "JapanLover",
+    "comment": "Authentic Japanese ambiance. A beautiful place for a special occasion."
+  },
+  {
+    "id": 11,
+    "restaurantId": 4,
+    "rating": 3,
+    "username": "MeatLover",
+    "comment": "The brisket was dry and lacked flavor. The side dishes were okay, but not great."
+  },
+  {
+    "id": 12,
+    "restaurantId": 4,
+    "rating": 3,
+    "username": "SouthernGuest",
+    "comment": "Decent BBQ, but nothing special. The pulled pork was the best item we tried."
+  },
+  {
+    "id": 13,
+    "restaurantId": 4,
+    "rating": 2,
+    "username": "HungryMike",
+    "comment": "The sauces are good, but the meat quality isn't consistent. Fast service, though."
+  },
+  {
+    "id": 14,
+    "restaurantId": 4,
+    "rating": 3,
+    "username": "BBQFellow",
+    "comment": "Good value for the price range, but you can find better BBQ elsewhere."
+  },
+  {
+    "id": 15,
+    "restaurantId": 5,
+    "rating": 4,
+    "username": "HealthNut",
+    "comment": "Love the custom bowl options! Everything is fresh and clean. My go-to for a healthy lunch."
+  },
+  {
+    "id": 16,
+    "restaurantId": 5,
+    "rating": 4,
+    "username": "OrganicFan",
+    "comment": "Reliably good. The portions are a bit small for the price, but the ingredients are high quality."
+  },
+  {
+    "id": 17,
+    "restaurantId": 5,
+    "rating": 4,
+    "username": "VeggieVibes",
+    "comment": "The turmeric dressing is amazing! I appreciate the clear labels."
+  },
+  {
+    "id": 18,
+    "restaurantId": 6,
+    "rating": 4,
+    "username": "SpiceSeeker",
+    "comment": "Very flavorful curries! The 'fire' is definitely real. Great low price point."
+  },
+  {
+    "id": 19,
+    "restaurantId": 6,
+    "rating": 3,
+    "username": "BudgetBites",
+    "comment": "Quick and cheap Indian food. Not the best quality, but excellent for a takeout night."
+  },
+  {
+    "id": 20,
+    "restaurantId": 6,
+    "rating": 4,
+    "username": "CurryFanatic",
+    "comment": "The naan bread is fresh and soft. The butter chicken was a hit with the family."
+  },
+  {
+    "id": 21,
+    "restaurantId": 7,
+    "rating": 4,
+    "username": "TacoTime",
+    "comment": "Authentic street food flavor! The al pastor tacos are a game-changer. Excellent value."
+  },
+  {
+    "id": 22,
+    "restaurantId": 7,
+    "rating": 4,
+    "username": "RoadsideEats",
+    "comment": "Fast service and delicious handmade tortillas. A perfect casual meal."
+  },
+  {
+    "id": 23,
+    "restaurantId": 7,
+    "rating": 5,
+    "username": "MexicanGuest",
+    "comment": "Simple, good, and cheap. Can't ask for much more from a taco spot."
+  },
+  {
+    "id": 24,
+    "restaurantId": 7,
+    "rating": 4,
+    "username": "SpicySara",
+    "comment": "The hottest sauce is actually hot! Love the freshness of the ingredients."
+  },
+  {
+    "id": 25,
+    "restaurantId": 8,
+    "rating": 4,
+    "username": "ScandiLover",
+    "comment": "Beautifully minimalist decor and cozy atmosphere. The meatballs were fantastic."
+  },
+  {
+    "id": 26,
+    "restaurantId": 8,
+    "rating": 4,
+    "username": "ComfortKing",
+    "comment": "Hearty, comforting food. The portions are large for a fine dining price point."
+  },
+  {
+    "id": 27,
+    "restaurantId": 8,
+    "rating": 4,
+    "username": "ModernFoodie",
+    "comment": "An interesting take on classic Nordic dishes. Service was friendly but a little slow."
+  },
+  {
+    "id": 28,
+    "restaurantId": 9,
+    "rating": 2,
+    "username": "DisappointedDiner",
+    "comment": "The meat was tough and chewy. Felt very rushed by the staff. Wouldn't go back."
+  },
+  {
+    "id": 29,
+    "restaurantId": 9,
+    "rating": 2,
+    "username": "Ragnarok",
+    "comment": "The theme is fun, but the food is below average. Stick to beer and appetizers."
+  },
+  {
+    "id": 30,
+    "restaurantId": 9,
+    "rating": 2,
+    "username": "BudgetReviewer",
+    "comment": "Overpriced for the quality. The 'rustic' feel just felt old and dirty."
+  },
+  {
+    "id": 31,
+    "restaurantId": 9,
+    "rating": 3,
+    "username": "GrilledGuy",
+    "comment": "The fire pit smells good from outside, but the flavors inside don't match."
+  },
+  {
+    "id": 32,
+    "restaurantId": 10,
+    "rating": 5,
+    "username": "SeafoodExpert",
+    "comment": "Incredible, fresh seafood. The grilled scallops were perfect. Elegant dining."
+  },
+  {
+    "id": 33,
+    "restaurantId": 10,
+    "rating": 5,
+    "username": "OceanBreeze",
+    "comment": "Fantastic view and truly 'ocean-to-table' quality. Worth the high price tag."
+  },
+  {
+    "id": 34,
+    "restaurantId": 10,
+    "rating": 4,
+    "username": "DinnerDate",
+    "comment": "Perfect for a romantic evening. Great wine list and impeccable service."
+  },
+  {
+    "id": 35,
+    "restaurantId": 11,
+    "rating": 3,
+    "username": "CoffeeCritic",
+    "comment": "Good coffee, standard pastries. A decent spot for a quick morning stop."
+  },
+  {
+    "id": 36,
+    "restaurantId": 11,
+    "rating": 4,
+    "username": "MorningPerson",
+    "comment": "The mocha is great. Can get very crowded and loud during peak hours."
+  },
+  {
+    "id": 37,
+    "restaurantId": 11,
+    "rating": 3,
+    "username": "LaptopUser",
+    "comment": "Nice place to work, but the light breakfast options are very basic."
+  },
+  {
+    "id": 38,
+    "restaurantId": 12,
+    "rating": 4,
+    "username": "PadThaiMaster",
+    "comment": "Excellent Pad Thai and very flavorful curries. The spice level is just right."
+  },
+  {
+    "id": 39,
+    "restaurantId": 12,
+    "rating": 4,
+    "username": "ThaiTeaFan",
+    "comment": "Quick service and friendly staff. The Thai iced tea is one of the best around."
+  },
+  {
+    "id": 40,
+    "restaurantId": 12,
+    "rating": 5,
+    "username": "NoodleLover",
+    "comment": "Authentic flavors, feels like a hole-in-the-wall gem. Great value."
+  },
+  {
+    "id": 41,
+    "restaurantId": 13,
+    "rating": 4,
+    "username": "HummusHolic",
+    "comment": "The hummus is incredible! Fresh ingredients and good portion sizes."
+  },
+  {
+    "id": 42,
+    "restaurantId": 13,
+    "rating": 4,
+    "username": "KebabKing",
+    "comment": "The chicken kebabs were perfectly grilled. A healthy and delicious option."
+  },
+  {
+    "id": 43,
+    "restaurantId": 13,
+    "rating": 4,
+    "username": "MedVibes",
+    "comment": "A little busy, but the food came out quickly. Solid Mediterranean fare."
+  },
+  {
+    "id": 44,
+    "restaurantId": 13,
+    "rating": 4,
+    "username": "GyroGuy",
+    "comment": "Best gyro in the city, hands down. The tzatziki is creamy and fresh."
+  },
+  {
+    "id": 45,
+    "restaurantId": 14,
+    "rating": 3,
+    "username": "WokFan",
+    "comment": "Very fast, but the food was a little greasy. Good for a cheap, quick fix."
+  },
+  {
+    "id": 46,
+    "restaurantId": 14,
+    "rating": 3,
+    "username": "ChineseCritic",
+    "comment": "Standard takeout Chinese. Not bad, but nothing 'golden' about it."
+  },
+  {
+    "id": 47,
+    "restaurantId": 14,
+    "rating": 2,
+    "username": "TakeoutTara",
+    "comment": "The sesame chicken was overly sweet. The fried rice was decent."
+  },
+  {
+    "id": 48,
+    "restaurantId": 15,
+    "rating": 5,
+    "username": "SteakConnoisseur",
+    "comment": "The ribeye was cooked to absolute perfection. High-quality cuts and excellent service."
+  },
+  {
+    "id": 49,
+    "restaurantId": 15,
+    "rating": 5,
+    "username": "DateNightDuo",
+    "comment": "A true fine dining experience. Everything from the wine to the dessert was flawless."
+  },
+  {
+    "id": 50,
+    "restaurantId": 15,
+    "rating": 4,
+    "username": "AmericanEater",
+    "comment": "Best mashed potatoes I've ever had. A classic steakhouse done right."
+  },
+  {
+    "id": 51,
+    "restaurantId": 16,
+    "rating": 4,
+    "username": "TapasTour",
+    "comment": "Lovely Spanish atmosphere. The paella was authentic and flavorful."
+  },
+  {
+    "id": 52,
+    "restaurantId": 16,
+    "rating": 4,
+    "username": "SangriaFan",
+    "comment": "The tapas selection is great, and the sangria is a must-try. Prices are a little high."
+  },
+  {
+    "id": 53,
+    "restaurantId": 16,
+    "rating": 4,
+    "username": "SeafoodLover",
+    "comment": "Fresh seafood, but the rice in the paella was slightly undercooked."
+  },
+  {
+    "id": 54,
+    "restaurantId": 17,
+    "rating": 3,
+    "username": "PitaLover",
+    "comment": "Good falafel, but the sauces were a bit watery. Very fast though."
+  },
+  {
+    "id": 55,
+    "restaurantId": 17,
+    "rating": 3,
+    "username": "StreetFoodFan",
+    "comment": "Underwhelming. The meat was dry and the salad wasn't very fresh."
+  },
+  {
+    "id": 56,
+    "restaurantId": 17,
+    "rating": 3,
+    "username": "MiddleEastMike",
+    "comment": "Great price for a quick bite. Stick to the classic shawarma wrap."
+  },
+  {
+    "id": 57,
+    "restaurantId": 17,
+    "rating": 3,
+    "username": "FastEater",
+    "comment": "It's a step above fast food, but the quality control is inconsistent."
+  },
+  {
+    "id": 58,
+    "restaurantId": 18,
+    "rating": 4,
+    "username": "DumplingFan",
+    "comment": "Handmade and delicious! I tried the pork and chive—fantastic. Quick service too."
+  },
+  {
+    "id": 59,
+    "restaurantId": 18,
+    "rating": 5,
+    "username": "NoodleSoupGuy",
+    "comment": "The soup dumplings are incredible. Perfect comfort food at a low price."
+  },
+  {
+    "id": 60,
+    "restaurantId": 18,
+    "rating": 4,
+    "username": "CreativeEater",
+    "comment": "Great variety of fillings. The sweet potato dumpling was surprisingly good!"
+  },
+  {
+    "id": 61,
+    "restaurantId": 19,
+    "rating": 4,
+    "username": "GrillMaster",
+    "comment": "The smoky flavor is excellent. Ribs were falling off the bone. A real treat."
+  },
+  {
+    "id": 62,
+    "restaurantId": 19,
+    "rating": 4,
+    "username": "EmberEnthusiast",
+    "comment": "Great ambiance with the open flame grill. The portions were just right."
+  },
+  {
+    "id": 63,
+    "restaurantId": 19,
+    "rating": 3,
+    "username": "HungryVisitor",
+    "comment": "Decent grilling, but the side dishes were underwhelming. Good cocktails."
+  },
+  {
+    "id": 64,
+    "restaurantId": 20,
+    "rating": 4,
+    "username": "PierogiLover",
+    "comment": "Authentic and delicious pierogi! Tastes just like grandma used to make. Very hearty."
+  },
+  {
+    "id": 65,
+    "restaurantId": 20,
+    "rating": 5,
+    "username": "ComfortFoodie",
+    "comment": "The goulash was amazing. A hidden gem for Polish cuisine. Great value."
+  },
+  {
+    "id": 66,
+    "restaurantId": 20,
+    "rating": 4,
+    "username": "EuropeanTraveller",
+    "comment": "Everything was fresh and well-prepared. Friendly, if slightly quiet, service."
+  },
+  {
+    "id": 67,
+    "restaurantId": 20,
+    "rating": 5,
+    "username": "SoupFan",
+    "comment": "The sour rye soup (Zurek) is fantastic. Perfect comfort on a cold day."
+  }
+]

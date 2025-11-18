@@ -9,6 +9,9 @@
   </head>
   <body>
     <div id="app" class="restaurant-single">
+      <button class="back-link">
+        <a href="/restaurants">← Back to list</a>
+      </button>
       {% verbatim %}
       <div v-if='restaurant' class="restaurant-card" :key="restaurant.id">
                 <img class="restaurant-card__img" :src="restaurant.image" alt="restaurant-logo"></img>
@@ -28,27 +31,79 @@
                     </div>
                 </div>
             </div>
-      {% endverbatim %}
 
-      <button class="back-link">
-        <a href="/restaurants">← Back to list</a>
-      </button>
+        <button @click="addReview()" class="add-review-btn">{{ isAddingActive ? 'Post' : 'Add review' }}</button>
+
+        <div class="reviews-wrapper">
+          <div class="review" v-if="isAddingActive">
+              <img src="../../static/user.png" height="35" width="35" class="review-img"></img>
+
+              <div class="review-details">
+                <input v-model="newReview.username" placeholder="Username" /> 
+                <input v-model="newReview.comment" placeholder="Write your review here..." />
+                <input v-model="newReview.rating" type="number" placeholder="⭐" />
+              </div>
+          </div>
+          
+          <div class="review" v-for="r in reviews" :key="r.id"> 
+              <img src="../../static/user.png" height="35" width="35" class="review-img"></img>
+
+              <div class="review-details">
+                <div>
+                  <span v-for="n in r.rating" :key="n">⭐</span> 
+                </div>
+                <p class="review-username">{{ r.username }}</p>
+                <p class="review-comment">{{ r.comment }}</p>
+              </div>
+          </div>
+        </div>
+      {% endverbatim %}
     </div>
 
     <script>
       const { createApp, ref, onMounted } = Vue;
 
-      const data = JSON.parse('{{ restaurant|safe }}');
+      const restaurantData = JSON.parse('{{ restaurant|safe }}');
+      const reviewsData = JSON.parse('{{ reviews|escapejs }}');
 
       createApp({
         setup() {
           const restaurant = ref(null);
+          const reviews = ref(null);
+          const isAddingActive = ref(null);
+          const newReview = ref({
+            username: '',
+            comment: '',
+            rating: 0
+          });
+
+          const addReview = () => {
+             if (newReview.value.username && newReview.value.comment && newReview.value.rating) {
+              
+                reviews.value.unshift({ ...newReview.value });
+  
+                newReview.value.id = reviews.length + 1,
+                newReview.value.username = '';
+                newReview.value.comment = '';
+                newReview.value.rating = 0;
+
+                isAddingActive.value = false;
+                return;
+             }
+
+            isAddingActive.value = true;
+          }
 
           onMounted(() => {
-            restaurant.value = data;
+            restaurant.value = restaurantData;
+            reviews.value = reviewsData;
           });
           return {
             restaurant,
+            reviews,
+            isAddingActive,
+            addReview,
+            newReview
           };
         },
       }).mount("#app");

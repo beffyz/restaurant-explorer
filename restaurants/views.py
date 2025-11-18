@@ -1,7 +1,7 @@
 import json
 from django.http import Http404
-from django.shortcuts import render, get_object_or_404
-from .utils import get_restaurants
+from django.shortcuts import render
+from .utils import get_restaurants, get_reviews
 
 def restaurants(request):
     data = get_restaurants()
@@ -13,15 +13,19 @@ def restaurants(request):
     return render(request, "restaurants/restaurants.html", context)
 
 def restaurant(request, id):
-    data = get_restaurants()
+    restaurants_data = get_restaurants()
+    reviews_data = get_reviews()
 
-    restaurant = next((r for r in data if r["id"] == id), None)
-
+    restaurant = next((r for r in restaurants_data if r["id"] == id), None)
+    
     if not restaurant:
         raise Http404("Restaurant not found")
 
+    reviews = [r for r in reviews_data if r["restaurantId"] == id]
+    
     context = {
-        "restaurant": json.dumps(restaurant), 
+        "restaurant": json.dumps(restaurant),
+        "reviews": json.dumps(reviews)
     }
 
     return render(request, "restaurant/restaurant.html", context)
