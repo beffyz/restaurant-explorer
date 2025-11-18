@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Restaurant list</title>
+    <script src="https://unpkg.com/vue/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body id="app">
+    <header>
+        <h1 class="page-title">Best Restaurants in Town</h1>
+
+        <div class="restaurants-filter-wrapper">
+            <button @click="toggleView()" type="button">☰</button>
+
+            <select v-model="selectedCuisine">
+                <option value="">All cuisines</option>
+                {% verbatim %}
+                <option v-for="c in cuisines" :key="c" :value="c">{{ c }}</option>
+                {% endverbatim %}
+            </select>
+
+            <select v-model="selectedPrice">
+                <option value="">All prices</option>
+                {% verbatim %}
+                <option v-for="p in priceRanges" :key="p" :value="p">{{ p }}$</option>
+                {% endverbatim %}
+            </select>
+
+            <button @click="resetFilters()" type="button">Reset</button>
+        </div>
+    </header>
+
+    <div class="container">
+        {% verbatim %}
+        <div :class="currentView" class="restaurant-cards-wrapper slide-in">
+            <div class="restaurant-card" v-for="r in filteredRestaurants" :key="r.id">
+                <img class="restaurant-card__img" :src="r.image" alt="restaurant-logo"></img>
+
+                <div class="restaurant-card__details">
+                    <div class="restaurant-card__details-primary">
+                        <h3 class="restaurant-card__details--title">
+                            <a :href="'/restaurants/' + r.id">{{ r.name }}</a>
+                            ⭐{{ r.rating }}
+                        </h3>
+                        <p class="restaurant-card__details--description">{{ r.description }}</p>
+                    </div>
+
+                    <div class="restaurant-card__details-secondary">
+                        <p class="restaurant-card__details--cuisine"><b>Cuisine:</b> {{ r.cuisine }}</p>
+                        <p class="restaurant-card__details--price"><b>Price:</b> Usually {{ r.price }}$ per person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div v-if="!filteredRestaurants.length">
+            <p class="filter-no-match text-center">No restaurants found matching your criteria.</p>
+        </div>
+        {% endverbatim %}
+    </div>
+
+    <script>
+        const { createApp, ref, computed, watch, onMounted, onUnmounted } = Vue;
+
+        const data = JSON.parse('{{ restaurants|safe }}');
+
+        createApp({
+            methods: {},
+
+            setup() {
+                const allRestaurants = ref(data);
+                const selectedCuisine = ref('');
+                const selectedPrice = ref('');
+                const currentView = ref('column');
+
+                const CURRENT_VIEW_KEY = 'CURRENT_VIEW_KEY';
+
+                const cuisines = computed(() => {
+                    const unique = [
+                        ...new Set(allRestaurants.value.map((r) => r.cuisine)),
+                    ];
+                    return unique.sort();
+                });
+
+                const priceRanges = computed(() => {
+                    const unique = [
+                          ...new Set(allRestaurants.value.map((r) => r.price)),
+                    ];
+              
+                    return unique.sort((a, b) => {
+                        const priceA = parseInt(a.split('-')[0]);
+                        const priceB = parseInt(b.split('-')[0]);
+                        
+                        return priceA - priceB;
+                    });
+                });
+
+                const filteredRestaurants = computed(() => {
+                    return allRestaurants.value.filter((restaurant) => {
+                        const cuisineMatch =
+                            !selectedCuisine.value ||
+                            restaurant.cuisine === selectedCuisine.value;
+                        const priceMatch =
+                            !selectedPrice.value ||
+                            restaurant.price === selectedPrice.value;
+                        return cuisineMatch && priceMatch;
+                    });
+                });
+
+                const resetFilters = () => {
+                    selectedCuisine.value = '';
+                    selectedPrice.value = '';
+                };
+
+                const toggleView = () => {
+                  currentView.value === 'column' ? currentView.value = 'row' : currentView.value = 'column';
+                  localStorage.setItem(CURRENT_VIEW_KEY, currentView.value);
+                }
+
+                const addSlideInAnimation = () => {
+                    const el = document.querySelector('.restaurant-cards-wrapper')
+                    el.classList.remove('slide-in');
+
+                    setTimeout(() => {
+                        el.classList.add('slide-in');
+                    }, 0); 
+                }
+
+                watch([selectedCuisine, selectedPrice], () => {
+                    addSlideInAnimation();
+                });
+
+                onMounted(() => {
+                  currentView.value = localStorage.getItem(CURRENT_VIEW_KEY);
+                })
+
+                return {
+                    cuisines,
+                    priceRanges,
+                    selectedCuisine,
+                    selectedPrice,
+                    filteredRestaurants,
+                    resetFilters,
+                    toggleView,
+                    currentView
+                };
+            },
+        }).mount("#app");
+    </script>
+</body>
+</html>

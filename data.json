@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Urban Spice Kitchen",
+    "description": "A modern fusion bistro offering bold global flavors.",
+    "cuisine": "Fusion",
+    "price": "20-25",
+    "rating": 4.6,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mama Rosa’s Trattoria",
+    "description": "Homestyle Italian dishes made with classic family recipes.",
+    "cuisine": "Italian",
+    "price": "30-50",
+    "rating": 3.2,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sakura Sushi Bar",
+    "description": "Fresh and authentic Japanese sushi and sashimi.",
+    "cuisine": "Japanese",
+    "price": "50-100",
+    "rating": 4.9,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 4,
+    "name": "BBQ Brothers",
+    "description": "Smoked meats and southern-style barbecue plates.",
+    "cuisine": "American",
+    "price": "20-25",
+    "rating": 2.8,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Green Bowl Delights",
+    "description": "Healthy salads and organic bowls for clean eating.",
+    "cuisine": "Vegetarian",
+    "price": "10-15",
+    "rating": 4.1,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bombay Fire",
+    "description": "Spicy Indian curries and traditional North Indian cuisine.",
+    "cuisine": "Indian",
+    "price": "5-10",
+    "rating": 3.7,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Tacos El Rey",
+    "description": "Authentic Mexican street tacos with handmade tortillas.",
+    "cuisine": "Mexican",
+    "price": "5-10",
+    "rating": 4.4,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Nordic Hearth",
+    "description": "Cozy Scandinavian comfort food with a modern twist.",
+    "cuisine": "Scandinavian",
+    "price": "30-50",
+    "rating": 4.0,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 9,
+    "name": "The Hungry Viking",
+    "description": "Hearty grilled meats and rustic European dishes.",
+    "cuisine": "European",
+    "price": "20-25",
+    "rating": 2.4,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Ocean Breeze Grill",
+    "description": "Seafood specialties with ocean-to-table freshness.",
+    "cuisine": "Seafood",
+    "price": "50-100",
+    "rating": 4.7,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cafe Mocha House",
+    "description": "Coffee, pastries, and light breakfast bites all day.",
+    "cuisine": "Cafe",
+    "price": "5-10",
+    "rating": 3.5,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Bamboo Thai Eatery",
+    "description": "Traditional Thai flavors with bold spices and herbs.",
+    "cuisine": "Thai",
+    "price": "10-15",
+    "rating": 4.2,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mediterraneo Grill",
+    "description": "Fresh Mediterranean staples like gyros, hummus, and kebabs.",
+    "cuisine": "Mediterranean",
+    "price": "20-25",
+    "rating": 4.0,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Golden Wok Express",
+    "description": "Fast and tasty Chinese classics prepared wok-style.",
+    "cuisine": "Chinese",
+    "price": "10-15",
+    "rating": 2.9,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Steakhouse Prime Cut",
+    "description": "Premium steaks grilled to perfection.",
+    "cuisine": "American",
+    "price": "50-100",
+    "rating": 4.8,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Casa del Mar",
+    "description": "Spanish-inspired seafood and paella dishes.",
+    "cuisine": "Spanish",
+    "price": "30-50",
+    "rating": 3.9,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Pita Palace",
+    "description": "Middle Eastern street food served fresh and fast.",
+    "cuisine": "Middle Eastern",
+    "price": "10-15",
+    "rating": 3.0,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 18,
+    "name": "The Dumpling Spot",
+    "description": "Handmade dumplings with creative fillings.",
+    "cuisine": "Chinese",
+    "price": "5-10",
+    "rating": 4.3,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Flame & Ember",
+    "description": "Wood-fired grilled dishes with smoky flavor.",
+    "cuisine": "Grill",
+    "price": "20-25",
+    "rating": 3.8,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Polish Pantry",
+    "description": "Authentic Polish pierogi, soups, and comfort dishes.",
+    "cuisine": "Polish",
+    "price": "10-15",
+    "rating": 4.5,
+    "image": "https://interiordesign.net/wp-content/uploads/2024/04/InteriorDesign_March2024_Brave-New-World-11-1024x768.jpg"
+  }
+]

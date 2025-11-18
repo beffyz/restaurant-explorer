@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurant</title>
+    <script src="https://unpkg.com/vue/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <div id="app" class="restaurant-single">
+      {% verbatim %}
+      <div v-if='restaurant' class="restaurant-card" :key="restaurant.id">
+                <img class="restaurant-card__img" :src="restaurant.image" alt="restaurant-logo"></img>
+
+                <div class="restaurant-card__details">
+                    <div class="restaurant-card__details-primary">
+                        <h3 class="restaurant-card__details--title">
+                            {{ restaurant.name }}
+                            ⭐{{ restaurant.rating }}
+                        </h3>
+                        <p class="restaurant-card__details--description">{{ restaurant.description }}</p>
+                    </div>
+
+                    <div class="restaurant-card__details-secondary">
+                        <p class="restaurant-card__details--cuisine"><b>Cuisine:</b> {{ restaurant.cuisine }}</p>
+                        <p class="restaurant-card__details--price"><b>Price:</b> Usually {{ restaurant.price }}$ per person</p>
+                    </div>
+                </div>
+            </div>
+      {% endverbatim %}
+
+      <button class="back-link">
+        <a href="/restaurants">← Back to list</a>
+      </button>
+    </div>
+
+    <script>
+      const { createApp, ref, onMounted } = Vue;
+
+      const data = JSON.parse('{{ restaurant|safe }}');
+
+      createApp({
+        setup() {
+          const restaurant = ref(null);
+
+          onMounted(() => {
+            restaurant.value = data;
+          });
+          return {
+            restaurant,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
